@@ -1,4 +1,4 @@
-export const data = {
+const data = {
     menu: [
         {
             id: 0,
@@ -121,7 +121,4 @@ export const data = {
     ],
 };
 
-export const dom = {
-    sectionCenter: document.querySelector('.section-center'),
-    btnContainer: document.querySelector('.btn-container'),
-};
+export default data;

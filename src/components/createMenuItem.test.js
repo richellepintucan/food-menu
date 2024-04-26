@@ -2,10 +2,10 @@
  * @jest-environment jsdom
  */
 
-import createButton from './createItem.js';
+import createMenuItem from './createMenuItem.js';
 
 describe('create an item element', () => {
-    const item = createItem({
+    const item = createMenuItem({
         id: 1,
         title: 'buttermilk pancakes',
         category: 'breakfast',
@@ -14,11 +14,15 @@ describe('create an item element', () => {
         desc: 'Perfect, golden pancakes. Carefully perfected to yield fat, fluffy, and super flavorful pancakes (the cousin to paper-thin crepes',
     });
 
-    test('nodeName -> ARTICLE', () => {
+    test('nodeName => ARTICLE', () => {
         expect(item.nodeName).toEqual('ARTICLE');
     });
 
-    test('className -> menu-items', () => {
+    test('className => menu-item breakfast', () => {
         expect(item.className).toEqual('menu-item breakfast');
+    });
+
+    test('childElementCount => 2', () => {
+        expect(item.childElementCount).toEqual(2);
     });
 });

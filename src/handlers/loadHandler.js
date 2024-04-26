@@ -1,4 +1,5 @@
-import { data, dom } from '../data.js';
+import data from '../data.js';
+import dom from '../dom.js';
 import createMenuItem from '../components/createMenuItem.js';
 import createMenuButton from '../components/createMenuButton.js';
 
@@ -6,7 +7,7 @@ const loadHandler = () => {
     // show the item by default
     data.menu.forEach((itemData) => {
         const itemDom = createMenuItem(itemData);
-        dom.sectionCenter.append(itemDom);
+        dom.menuItems.append(itemDom);
     });
 
     // show buttons

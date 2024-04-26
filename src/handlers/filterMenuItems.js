@@ -1,3 +1,5 @@
+import data from '../data.js';
+
 const filterMenuItems = (id) => {
     const menuItems = document.querySelectorAll('.menu-item');
     menuItems.forEach((item) => {
