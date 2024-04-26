@@ -69,7 +69,6 @@ const data = {
   breakfast, lunch, dinner).
 - Images: Include images of the food items to make the menu more visually
   appealing.
--
 - Detailed Information: Provide additional details about each menu item, price,
   descriptions.
 
